@@ -54,7 +54,7 @@ ol{
 
 
 
-/* Style the header 
+/* Style the header */
 .header {
   background-color: rgb(159, 162, 189);
   text-align: center;
@@ -65,20 +65,20 @@ ol{
   padding-bottom: 10px;
 }
 
-Page content
+/*Page content */
 .content {
   padding: 16px;
 }
 
-The sticky class is added to the header with JS when it reaches its scroll position
+/*The sticky class is added to the header with JS when it reaches its scroll position*/
 .sticky {
   position: fixed;
   top: 0;
   width: 100%
 }
 
-Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0)
+/*Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0)*/
 .sticky + .content {
   padding-top: 102px;
 }
-*/
+

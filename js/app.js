@@ -7,7 +7,7 @@ let user = prompt('What is your name?');
 
 alert('Welcome '+ user + '!');
 
-
+/*
 // Question One
 
 let answerOne = prompt('Do I like to climb?');
@@ -101,9 +101,12 @@ else {
   //console.log('That is not a correct response, please reply "yes" or "no"');
   alert('That is not a correct response ' + user + ', please reply "yes" or "no".');
 }
+*/
 
+// STICKY HEADER
 
 //When the user scrolls the page, execute myFunction
+
 window.onscroll = function() {myFunction()};
 
 // Get the header
@@ -122,13 +125,16 @@ function myFunction() {
 }
 
 
+// QUESTION 6
+
+
 let attempts = 4;
-let correctAnswer = '60'
+let correctAnswer = 60;
 
 
 for (let i=0; i<attempts; i++){
   let questionSix= prompt('Guess a number between 1 and 100');
-    if (questionSix === correctAnswer) {
+    if (questionSix == correctAnswer) {
       alert('YOU HAVE GUESSED THE CORRECT ANSWER');
       //console.log (questionSix);
       totalScore=totalScore+1;
@@ -145,6 +151,10 @@ for (let i=0; i<attempts; i++){
 }
 
 alert(`The correct answer was ${correctAnswer}`)
+
+
+// QUESTION 7
+
 
 let secondAttempts = 6;
 let fellowship = ['gandalf','aragorn','gimli','legolas','frodo','samwise','mary','pippin','boromir'];
