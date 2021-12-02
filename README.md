@@ -10,3 +10,9 @@
 - Added three lists to html.
 - Added two more questions to alert the user when visiting the site.
 - Added a tracker that keeps count of the correct answers. The user will be prompted how many they get correct at the end of the alert phase.
+
+## Pair Programming 12/2/21
+
+Converted prompt questions into functions
+Navigator: Shane
+Driver: Kevin
