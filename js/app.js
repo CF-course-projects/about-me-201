@@ -73,22 +73,24 @@ questionThree();
 
 
 // Question Four
-
-let answerFour = prompt('Can you speak spanish?');
-
-if (answerFour.toLowerCase() === 'yes' || answerFour.toLowerCase() === 'y'){
-  //console.log('Sorry, but I would not consider myself capable of speaking Spanish!');
-  alert('Sorry, but I would not consider myself capable of speaking Spanish!');
+function questionFour() {
+  let answerFour = prompt('Can you speak spanish?');
+  
+  if (answerFour.toLowerCase() === 'yes' || answerFour.toLowerCase() === 'y'){
+    //console.log('Sorry, but I would not consider myself capable of speaking Spanish!');
+    alert('Sorry, but I would not consider myself capable of speaking Spanish!');
+  }
+  else if (answerFour.toLowerCase() === 'no' || answerFour.toLowerCase() === 'n'){
+    //console.log('Correct! I cannot speak Spanish. Yet...');
+    totalScore=totalScore+1;
+    alert('Correct! I cannot speak Spanish. Yet...');
+  }
+  else {
+    //console.log('That is not a correct response, please reply "yes" or "no"');
+    alert('That is not a correct response, please reply "yes" or "no"');
+  }
 }
-else if (answerFour.toLowerCase() === 'no' || answerFour.toLowerCase() === 'n'){
-  //console.log('Correct! I cannot speak Spanish. Yet...');
-  totalScore=totalScore+1;
-  alert('Correct! I cannot speak Spanish. Yet...');
-}
-else {
-  //console.log('That is not a correct response, please reply "yes" or "no"');
-  alert('That is not a correct response, please reply "yes" or "no"');
-}
+questionFour();
 
 
 // Question Five
