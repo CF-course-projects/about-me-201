@@ -165,26 +165,28 @@ questionSix();
 
 // QUESTION 7
 
-
-let secondAttempts = 6;
-let fellowship = ['gandalf','aragorn','gimli','legolas','frodo','samwise','mary','pippin','boromir'];
-
-console.log(fellowship);
-
-for (let p=0; p<secondAttempts; p++){
-  let questionSeven= prompt('Name a character from the original fellowship of the ring (that left Rivendell). ');
-    if (fellowship.includes(questionSeven.toLowerCase())) {
-      alert('YOU HAVE GUESSED THE CORRECT ANSWER');
-      totalScore=totalScore+1;
-      break;
-    }
-    else if (questionSeven != fellowship) {
-      alert('That is not the right answer please try again.');
-      //console.log(questionSeven);
-    }
+function questionSeven() {
+  let secondAttempts = 6;
+  let fellowship = ['gandalf','aragorn','gimli','legolas','frodo','samwise','mary','pippin','boromir'];
+  
+  console.log(fellowship);
+  
+  for (let p=0; p<secondAttempts; p++){
+    let questionSeven= prompt('Name a character from the original fellowship of the ring (that left Rivendell). ');
+      if (fellowship.includes(questionSeven.toLowerCase())) {
+        alert('YOU HAVE GUESSED THE CORRECT ANSWER');
+        totalScore=totalScore+1;
+        break;
+      }
+      else if (questionSeven != fellowship) {
+        alert('That is not the right answer please try again.');
+        //console.log(questionSeven);
+      }
+  }
+  
+  alert(`The correct answer could have been any of the following; ${ fellowship}.`)
 }
-
-alert(`The correct answer could have been any of the following; ${ fellowship}.`)
+questionSeven();
 alert(`Your total Score was ${totalScore} out of ${totalQuestions}.`)
 
 
