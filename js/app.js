@@ -30,41 +30,43 @@ function questionOne() {
 questionOne();
 
 // Question Two
-
-let answerTwo = prompt('Have I worked as a wildland firefighter?');
-
-if (answerTwo.toLowerCase() === 'yes' || answerTwo.toLowerCase() === 'y'){
-  //console.log('Yes I have worked as a wildland firefighter!');
-  totalScore=totalScore+1;
-  alert('Yes I have worked as a wildland firefighter!');
+function questionTwo() {
+  let answerTwo = prompt('Have I worked as a wildland firefighter?');
+  
+  if (answerTwo.toLowerCase() === 'yes' || answerTwo.toLowerCase() === 'y'){
+    //console.log('Yes I have worked as a wildland firefighter!');
+    totalScore=totalScore+1;
+    alert('Yes I have worked as a wildland firefighter!');
+  }
+  else if (answerTwo.toLowerCase() === 'no' || answerTwo.toLowerCase() === 'n'){
+    //console.log('Sorry, but I have worked as a wildland firefighter!');
+    alert('Sorry, but I have worked as a wildland firefighter!');
+  }
+  else {
+    //console.log('That is not a correct response, please reply "yes" or "no"');
+    alert('That is not a correct response, please reply "yes" or "no"');
+  }
 }
-else if (answerTwo.toLowerCase() === 'no' || answerTwo.toLowerCase() === 'n'){
-  //console.log('Sorry, but I have worked as a wildland firefighter!');
-  alert('Sorry, but I have worked as a wildland firefighter!');
-}
-else {
-  //console.log('That is not a correct response, please reply "yes" or "no"');
-  alert('That is not a correct response, please reply "yes" or "no"');
-}
+questionTwo();
 
 
 // Question Three
+  let answerThree = prompt('Am I afraid of heights?');
+  
+  if (answerThree.toLowerCase() === 'yes' || answerThree.toLowerCase() === 'y'){
+    //console.log('Sorry but I am not afraid of heights.');
+    alert('Sorry but I am not afraid of heights.');
+  }
+  else if (answerThree.toLowerCase() === 'no' || answerThree.toLowerCase() === 'n'){
+    //console.log('Correct! I am not afraid of heights.');
+    totalScore=totalScore+1
+    alert('Correct! I am not afraid of heights.');
+  }
+  else {
+    //console.log('That is not a correct response, please reply "yes" or "no"');
+    alert('That is not a correct response, please reply "yes" or "no"');
+  }
 
-let answerThree = prompt('Am I afraid of heights?');
-
-if (answerThree.toLowerCase() === 'yes' || answerThree.toLowerCase() === 'y'){
-  //console.log('Sorry but I am not afraid of heights.');
-  alert('Sorry but I am not afraid of heights.');
-}
-else if (answerThree.toLowerCase() === 'no' || answerThree.toLowerCase() === 'n'){
-  //console.log('Correct! I am not afraid of heights.');
-  totalScore=totalScore+1
-  alert('Correct! I am not afraid of heights.');
-}
-else {
-  //console.log('That is not a correct response, please reply "yes" or "no"');
-  alert('That is not a correct response, please reply "yes" or "no"');
-}
 
 
 // Question Four
