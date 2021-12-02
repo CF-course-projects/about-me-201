@@ -12,20 +12,22 @@ alert('Welcome '+ user + '!');
 
 let answerOne = prompt('Do I like to climb?');
 
-if (answerOne.toLowerCase() === 'yes' || answerOne.toLowerCase() === 'y'){
-  //console.log('Yes I would be an astronaut');
-  totalScore=totalScore+1;
-  alert('Yes I do like to climb!');
+function questionOne() {
+  if (answerOne.toLowerCase() === 'yes' || answerOne.toLowerCase() === 'y'){
+    //console.log('Yes I would be an astronaut');
+    totalScore=totalScore+1;
+    alert('Yes I do like to climb!');
+  }
+  else if (answerOne.toLowerCase() === 'no' || answerOne.toLowerCase() === 'n'){
+    //console.log('Sorry');
+    alert('Sorry, but I do like to climb!');
+  }
+  else {
+    //console.log('That is not a correct response, please reply "yes" or "no"');
+    alert('That is not a correct response, please reply "yes" or "no"');
+  }
 }
-else if (answerOne.toLowerCase() === 'no' || answerOne.toLowerCase() === 'n'){
-  //console.log('Sorry');
-  alert('Sorry, but I do like to climb!');
-}
-else {
-  //console.log('That is not a correct response, please reply "yes" or "no"');
-  alert('That is not a correct response, please reply "yes" or "no"');
-}
-
+questionOne();
 
 // Question Two
 
