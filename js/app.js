@@ -137,31 +137,31 @@ function myFunction() {
 
 // QUESTION 6
 
-
-let attempts = 4;
-let correctAnswer = 60;
-
-
-for (let i=0; i<attempts; i++){
-  let questionSix= prompt('Guess a number between 1 and 100');
-    if (questionSix == correctAnswer) {
-      alert('YOU HAVE GUESSED THE CORRECT ANSWER');
-      //console.log (questionSix);
-      totalScore=totalScore+1;
-      break;
-    }
-    else if (questionSix > correctAnswer) {
-      alert('You have guessed too high, please try again.')
-      //console.log (questionSix);
-    }
-    else if (questionSix < correctAnswer) {
-      alert('You have guessed to low, please try again.')
-      //console.log (questionSix);
-    }
+function questionSix() {
+  let attempts = 4;
+  let correctAnswer = 60;
+  
+  for (let i=0; i<attempts; i++){
+    let questionSix= prompt('Guess a number between 1 and 100');
+      if (questionSix == correctAnswer) {
+        alert('YOU HAVE GUESSED THE CORRECT ANSWER');
+        //console.log (questionSix);
+        totalScore=totalScore+1;
+        break;
+      }
+      else if (questionSix > correctAnswer) {
+        alert('You have guessed too high, please try again.')
+        //console.log (questionSix);
+      }
+      else if (questionSix < correctAnswer) {
+        alert('You have guessed to low, please try again.')
+        //console.log (questionSix);
+      }
+  }
+  
+  alert(`The correct answer was ${correctAnswer}`)
 }
-
-alert(`The correct answer was ${correctAnswer}`)
-
+questionSix();
 
 // QUESTION 7
 
