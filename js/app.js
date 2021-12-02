@@ -7,7 +7,7 @@ let user = prompt('What is your name?');
 
 alert('Welcome '+ user + '!');
 
-/*
+
 // Question One
 
 let answerOne = prompt('Do I like to climb?');
@@ -101,7 +101,7 @@ else {
   //console.log('That is not a correct response, please reply "yes" or "no"');
   alert('That is not a correct response ' + user + ', please reply "yes" or "no".');
 }
-*/
+
 
 // STICKY HEADER
 
