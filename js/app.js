@@ -94,23 +94,24 @@ questionFour();
 
 
 // Question Five
-
-let answerFive = prompt('Have I ever held a monkey?');
-
-if (answerFive.toLowerCase() === 'yes' || answerFive.toLowerCase() === 'y'){
-  //console.log('Yes, I have held a monkey!');
-  totalScore=totalScore+1;
-  alert('Yes, I have held a monkey!');
+function questionFive() {
+  let answerFive = prompt('Have I ever held a monkey?');
+  
+  if (answerFive.toLowerCase() === 'yes' || answerFive.toLowerCase() === 'y'){
+    //console.log('Yes, I have held a monkey!');
+    totalScore=totalScore+1;
+    alert('Yes, I have held a monkey!');
+  }
+  else if (answerFive.toLowerCase() === 'no' || answerFive.toLowerCase() === 'n'){
+    //console.log('No I have not held a monkey');
+    alert('Sorry, but I have held a monkey!');
+  }
+  else {
+    //console.log('That is not a correct response, please reply "yes" or "no"');
+    alert('That is not a correct response ' + user + ', please reply "yes" or "no".');
+  }
 }
-else if (answerFive.toLowerCase() === 'no' || answerFive.toLowerCase() === 'n'){
-  //console.log('No I have not held a monkey');
-  alert('Sorry, but I have held a monkey!');
-}
-else {
-  //console.log('That is not a correct response, please reply "yes" or "no"');
-  alert('That is not a correct response ' + user + ', please reply "yes" or "no".');
-}
-
+questionFive();
 
 // STICKY HEADER
 
