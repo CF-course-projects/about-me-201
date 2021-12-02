@@ -51,6 +51,7 @@ questionTwo();
 
 
 // Question Three
+function questionThree() {
   let answerThree = prompt('Am I afraid of heights?');
   
   if (answerThree.toLowerCase() === 'yes' || answerThree.toLowerCase() === 'y'){
@@ -66,6 +67,8 @@ questionTwo();
     //console.log('That is not a correct response, please reply "yes" or "no"');
     alert('That is not a correct response, please reply "yes" or "no"');
   }
+}
+questionThree();
 
 
 
